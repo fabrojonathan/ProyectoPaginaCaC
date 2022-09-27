@@ -8,8 +8,16 @@
     height: 15vh;
 }
 
+header{
+    background-color: rgb(51, 58, 64);
+}
+
 nav{
     background: rgb(51, 51, 51);
+}
+
+footer{
+    background-color: rgb(28, 61, 78);
 }
 
 #sectionPrincipal{
@@ -20,6 +28,66 @@ nav{
     background-size: cover;
 }
 
+#card{
+    border: 2px;
+    border-style: solid;
+    border-color:rgba(221, 208, 208, 0.5);
+    box-shadow: 8px 11px 23px -4px rgba(82,82,82,0.6);
+    -webkit-box-shadow: 8px 11px 23px -4px rgba(82,82,82,0.6);
+    -moz-box-shadow: 8px 11px 23px -4px rgba(82,82,82,0.6);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+#link{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+
+#sectionBsAsOctubre2{
+    background-color: rgb(53, 58, 64);
+}
+
+#btnEnviar{
+    background-color: rgb(150,201,62);
+    border: none;
+    color:white;
+}
+
 a:hover{
     color: rgb(233, 192, 10) !important;
+}
+
+
+@media (min-width: 768px){
+    #boxLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    #boxLinks a{
+        width: 90px;
+    }
+
+    #card{
+        box-shadow: none;
+    }
+
+    #sectionBsAsOctubre , #sectionBsAsOctubre2{
+        height: 70vh;
+    }
+
+    #form{
+        margin:auto;
+        width: 60%;
+    }
+
+    footer{
+        height: 15vh;
+        font-size: 0.9rem;
+    }
 }
