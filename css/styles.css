@@ -2,12 +2,6 @@
     margin: 0;
 }
 
-#logoimg{
-    max-width: 125px;
-    width: 20vw;
-    height: 10vh;
-}
-
 header{
     background-color: rgb(51, 58, 64);
 }
@@ -72,17 +66,28 @@ a:hover{
 
 
 @media (max-width: 767px) {
+    #logoimg{
+        min-width: 70px;
+        width: 20vw;
+        height: 11vh;
+    }
+
     #sectionBsAsOctubre{
-        height: 50vh !important;
+        height: 70vh;
     }
     
     #sectionBsAsOctubre2{
-        height: 50vh !important;
+        height: 70vh;
         overflow: scroll;
     }
 }
 
 @media (min-width: 768px){
+    #logoimg{
+        width: 15vw;
+        height: 12vh;
+    }
+
     #boxLinks{
         display: flex;
         justify-content: center;
@@ -115,6 +120,11 @@ a:hover{
 }
 
 @media (min-width: 992px){
+    #logoimg{
+        width: 10vw;
+        height: 14vh;
+    }
+
     #inputForm{
         width: 49.5%;
     }
