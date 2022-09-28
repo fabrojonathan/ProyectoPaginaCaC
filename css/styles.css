@@ -3,9 +3,9 @@
 }
 
 #logoimg{
-    width: 30vw;
-    max-width: 125px;    
-    height: 15vh;
+    max-width: 125px;
+    width: 20vw;
+    height: 10vh;
 }
 
 header{
@@ -50,6 +50,11 @@ footer{
     height: 70vh;
 }
 
+#sectionBsAsOctubre{
+    background: url('../assets/images/honolulu.jpg');
+    background-size: cover;
+}
+
 #sectionBsAsOctubre2{
     background-color: rgb(53, 58, 64);
 }
@@ -65,6 +70,17 @@ a:hover{
     color: rgb(233, 192, 10) !important;
 }
 
+
+@media (max-width: 767px) {
+    #sectionBsAsOctubre{
+        height: 50vh !important;
+    }
+    
+    #sectionBsAsOctubre2{
+        height: 50vh !important;
+        overflow: scroll;
+    }
+}
 
 @media (min-width: 768px){
     #boxLinks{
