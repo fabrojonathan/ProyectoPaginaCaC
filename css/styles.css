@@ -64,8 +64,17 @@ footer{
     height: 35px;
 }
 
+#id{
+    width: 5px;
+}
+
 a:hover{
     color: rgb(233, 192, 10) !important;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    font-size: 1.07rem;
 }
 
 
@@ -95,10 +104,13 @@ a:hover{
 
     #boxLinks{
         display: flex;
-        justify-content: center;
         align-items: center;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 1.2rem;
+    }
+
+    #boxLinks a{
+        text-align: center;
     }
 
     #boxLinks a{
