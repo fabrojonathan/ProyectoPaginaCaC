@@ -51,6 +51,7 @@ footer{
 #sectionBsAsOctubre{
     background: url('../assets/images/honolulu.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 #sectionBsAsOctubre2{
