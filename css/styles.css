@@ -48,6 +48,11 @@ footer{
     height: 70vh;
 }
 
+#buttonsPrincipal button{
+    width: 150px !important;
+    height: 35px !important;
+}
+
 #sectionBsAsOctubre{
     background: url('../assets/images/honolulu.jpg');
     background-size: cover;
