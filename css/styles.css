@@ -63,7 +63,7 @@ footer{
     background-color: rgb(53, 58, 64);
 }
 
-#btnEnviar{
+#btnEnviar, #btnBorrar, #btnResumen{
     background-color: rgb(150,201,62);
     border: none;
     color:white;
