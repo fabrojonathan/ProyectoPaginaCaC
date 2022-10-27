@@ -63,15 +63,16 @@ footer{
     background-color: rgb(53, 58, 64);
 }
 
-#btnEnviar, #btnBorrar, #btnResumen{
+#btnEnviar, /*Comprar tickets.html*/ #btnBorrar, #btnResumen{
     background-color: rgb(150,201,62);
     border: none;
     color:white;
     height: 35px;
 }
 
-#importeBackGround{
+/*Comprar tickets.html*/ #importeBackGround{
     background-color: rgb(204, 229, 255);
+    height: 40px;
 }
 
 #id{
