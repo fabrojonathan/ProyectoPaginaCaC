@@ -70,6 +70,10 @@ footer{
     height: 35px;
 }
 
+#importeBackGround{
+    background-color: rgb(204, 229, 255);
+}
+
 #id{
     width: 5px;
 }
@@ -99,6 +103,11 @@ button:hover{
     #sectionBsAsOctubre2{
         height: 70vh;
         overflow: scroll;
+    }
+
+    /*Comprar Tickets*/
+    #cards div{
+        height: 150px;
     }
 }
 
@@ -140,6 +149,15 @@ button:hover{
     footer{
         height: 15vh;
         font-size: 0.9rem;
+    }
+
+    #btnBorrar, #btnResumen{
+        display: inline !important;
+        width: 45% !important;
+    }
+
+    #nombre, #apellido{
+        width: 45.5%;
     }
 }
 

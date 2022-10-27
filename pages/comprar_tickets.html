@@ -30,6 +30,27 @@
     </nav>
     </header>
 
+    <section id="cards" class="d-flex flex-column text-center align-items-center">
+        <div class="card1 border border-primary w-75 my-2">
+            <h6>Estudiante</h6>
+            <span>Tienen un descuento</span>
+            <span>80%</span>
+            <span>* presentar documentación</span>
+        </div>
+        <div class="card2 border border-success w-75 my-2">
+            <h6>Trainee</h6>
+            <span>Tienen un descuento</span>
+            <span>80%</span>
+            <span>* presentar documentación</span>
+        </div>
+        <div class="card3 border border-warning w-75 my-2">
+            <h6>Junior</h6>
+            <span>Tienen un descuento</span>
+            <span>80%</span>
+            <span>* presentar documentación</span>
+        </div>
+    </section>
+
     <section id="form" class="mb-2 d-flex flex-column">
         <div class="px-4 p-md-0 text-center p-3">
             <h6 class="mt-3 mb-0 fs-6 fw-light text-center">VENTA</h6>
@@ -37,22 +58,24 @@
         </div>
         <div class="text-center">
             <form class="" action="">
-                <input id="inputForm" class="col-11 mb-2 d-lg-inline" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
-                <input id="inputForm" class="col-11 mb-2 d-lg-inline" type="text" name="Apellido" id="Apellido" placeholder="Apellido">
-                <input id="inputForm" class="col-11 mb-2 d-lg-inline" type="text" name="Correo" id="Correo" placeholder="Correo">
+                <input id="nombre" class="col-11 mb-2 d-lg-inline col-sm-5" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input id="apellido" class="col-11 mb-2 d-lg-inline col-sm-5" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input id="correo" class="col-11 mb-2 d-lg-inline" type="text" name="correo" id="correo" placeholder="Correo">
                 <label class="float-start ms-3" for="">Cantidad</label>
-                <input type="inputForm" class="col-11 mb-2 d-lg-inline" type="text" name="Cantidad" id="Cantidad" placeholder="Cantidad">
+                <input type="inputForm" class="col-11 mb-2 d-lg-inline" type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
                 <label class="float-start ms-3" for="">Categoria</label>
-                <select name="Categoria" id="Categoria" class="d-inline form-select-sm col-11 mb-2">
-                    <option select="" value="0" >Sin categoria</option>
+                <select name="categoria" id="categoria" class="d-inline form-select-sm col-11 mb-2">
+                    <option select="" value="0">Sin Categoria</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainer</option>
                     <option value="3">Junior</option>
                 </select>
-                <label class="" for="">Total a Pagar: $</label>
-                <label class="" for="">Importe</label>
-                <button id="btnBorrar" class="col-11 my-2 rounded-2 col-lg-12">Borrar</button>
-                <button id="btnResumen" class="col-11 mb-2 rounded-2 col-lg-12">Resumen</button>
+                <div id="importeBackGround" class="col-11 m-0 m-auto rounded-2">
+                    <label class="" for="">Total a Pagar: $</label>
+                    <label class="" for="">Importe</label>
+                </div>
+                <button id="btnBorrar" class="col-11 my-2 rounded-2 col-sm-5">Borrar</button>
+                <button id="btnResumen" class="col-11 mb-2 rounded-2 col-sm-5">Resumen</button>
             </form>
         </div>
     </section>
