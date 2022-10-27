@@ -152,13 +152,27 @@ button:hover{
         font-size: 0.9rem;
     }
 
-    #btnBorrar, #btnResumen{
+    /* ComprarTickets.html*/
+
+    #btnBorrar, #btnResumen, #cantidad,#categoria{
         display: inline !important;
         width: 45% !important;
     }
 
+    #txtCantidad, #txtCategoria{
+        width: 45% !important;
+    }
+
+    #correo{
+        width: 91.5% !important;
+    }
+
     #nombre, #apellido{
         width: 45.5%;
+    }
+
+    #importeBackGround{
+        width: 91.5%;
     }
 }
 
@@ -170,5 +184,9 @@ button:hover{
 
     #inputForm{
         width: 49.5%;
+    }
+
+    #cards div{
+        width: 30% !important;
     }
 }
