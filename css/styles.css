@@ -108,7 +108,8 @@ button:hover{
 
     /*Comprar Tickets*/
     #cards div{
-        height: 45vh;
+        height: 40vh;
+        width: 65vw;
     }
 }
 
@@ -174,6 +175,11 @@ button:hover{
     #importeBackGround{
         width: 91.5%;
     }
+
+    #cards div{
+        height: 35vh;
+        width: 65vw;
+    }
 }
 
 @media (min-width: 992px){
@@ -187,6 +193,7 @@ button:hover{
     }
 
     #cards div{
-        width: 30% !important;
+        width: 22% !important;
+        height: 22% !important;
     }
 }
