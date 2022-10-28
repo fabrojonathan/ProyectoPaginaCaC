@@ -58,17 +58,17 @@
         </div>
         <div class="text-center flex-column">
             <form class="" action="">
-                <input id="nombre" class="col-10 mb-2" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input id="apellido" class="col-10 mb-2" type="text" name="apellido" id="apellido" placeholder="Apellido">
-                <input id="correo" class="col-10 mb-2" type="text" name="correo" id="correo" placeholder="Correo">
+                <input id="nombre" class="col-10 mb-2" type="text" name="nombre" placeholder="Nombre">
+                <input id="apellido" class="col-10 mb-2" type="text" name="apellido" placeholder="Apellido">
+                <input id="correo" class="col-10 mb-2" type="text" name="correo" placeholder="Correo">
 
                 <label id="txtCantidad" class="col-5 text-start" for="">Cantidad</label>
 
                 <label id="txtCategoria" class="col-5 text-start" for="">Categoria</label>
 
-                <input class="col-5 mb-2" type="inputForm" type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+                <input id="cantidad" class="col-5 mb-2" type="inputForm" type="text" name="cantidad" placeholder="Cantidad">
 
-                <select class="d-inline form-select-sm col-5 mb-2" name="categoria" id="categoria">
+                <select id="categoria" class="d-inline form-select-sm col-5 mb-2" name="categoria">
                     <option select="" value="0">Sin Categoria</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainer</option>
@@ -77,7 +77,7 @@
 
                 <div id="importeBackGround" class="col-10 m-0 m-auto p-2 my-3 rounded-2 d-flex justify-content-between">
                     <label class="" for="">Total a Pagar: $</label>
-                    <label class="" for="">0,00</label>
+                    <label id="importeNeto" class="" for="">0,00</label>
                 </div>
 
                 <button id="btnBorrar" class="col-10 my-2 rounded-2">Borrar</button>
@@ -97,6 +97,6 @@
         <a id="link" class="mb-1" href="">Estudiantes</a>
     </footer>
 
-    <script></script>
+    <script src="/json/script.js"></script>
 </body>
 </html>

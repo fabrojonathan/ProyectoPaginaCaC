@@ -194,6 +194,6 @@ button:hover{
 
     #cards div{
         width: 22% !important;
-        height: 22% !important;
+        height: 32vh !important;
     }
 }
