@@ -24,7 +24,7 @@
                 <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">Los oradores</a>
                 <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">El lugar y la fecha</a>
                 <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="">Conviértete en orador</a>
-                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="./pages/comprar_tickets.html">Comprar Tickets</a>
+                <a id="link" class="d-block mt-1 p-1 d-lg-inline" href="/pages/comprar_tickets.html">Comprar Tickets</a>
             </div>
         </div>
     </nav>
@@ -57,31 +57,39 @@
             <h3 class="fs-2 fw-bold mb-4">VALOR DE TICKET $200</h3>
         </div>
         <div class="text-center flex-column">
-            <form class="" action="">
-                <input id="nombre" class="col-10 mb-2" type="text" name="nombre" placeholder="Nombre">
-                <input id="apellido" class="col-10 mb-2" type="text" name="apellido" placeholder="Apellido">
-                <input id="correo" class="col-10 mb-2" type="text" name="correo" placeholder="Correo">
+            <form action="" novalidate>
+                <input id="nombre" class="col-10 mb-2" type="text" name="nombre" placeholder="Nombre" required>
+                <input id="apellido" class="col-10 mb-2" type="text" name="apellido" placeholder="Apellido" required>
+                <input id="correo" class="col-10 mb-2" type="email" name="correo" placeholder="Correo" required>
+                <label id="txtCantidad" class="col-5 text-start" for="cantidad">Cantidad</label>
 
-                <label id="txtCantidad" class="col-5 text-start" for="">Cantidad</label>
+                <label id="txtCategoria" class="col-5 text-start" for="categoria">Categoria</label>
 
-                <label id="txtCategoria" class="col-5 text-start" for="">Categoria</label>
+                <input id="cantidad" class="col-5 mb-2" type="inputForm" type="text" name="cantidad" placeholder="Cantidad" required>
 
-                <input id="cantidad" class="col-5 mb-2" type="inputForm" type="text" name="cantidad" placeholder="Cantidad">
-
-                <select id="categoria" class="d-inline form-select-sm col-5 mb-2" name="categoria">
-                    <option select="" value="0">Sin Categoria</option>
+                <select id="categoria" class="d-inline form-select-sm col-5 mb-2" name="categoria" required>
+                    <option value="" selected>Seleccione una opción</option>
+                    <option value="0">Sin categoria</option>
                     <option value="1">Estudiante</option>
                     <option value="2">Trainer</option>
                     <option value="3">Junior</option>
                 </select>
 
-                <div id="importeBackGround" class="col-10 m-0 m-auto p-2 my-3 rounded-2 d-flex justify-content-between">
-                    <label class="" for="">Total a Pagar: $</label>
+                <div id="importeBackGround" class="col-10 m-0 m-auto p-2 my-3 rounded-2 d-flex justify-content-between text-start">
+                    Total a Pagar: $
                     <label id="importeNeto" class="" for="">0,00</label>
                 </div>
 
-                <button id="btnBorrar" class="col-10 my-2 rounded-2">Borrar</button>
-                <button id="btnResumen" class="col-10 mb-2 rounded-2">Resumen</button>
+                <div id="messageError" class="border border-2 border-danger col-11 m-0 p-1 m-auto rounded-2 justify-content-center">
+                <span class="me-1">Debe completar todos los espacios!</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-exclamation-square" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg>
+                </div>
+
+                <button type="reset" id="btnBorrar" class="col-10 my-3 rounded-2">Borrar</button>
+                <button type="button" id="btnResumen" class="col-10 mb-2 rounded-2">Resumen</button>
 
             </form>
         </div>

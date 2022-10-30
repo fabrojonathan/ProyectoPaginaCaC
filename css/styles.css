@@ -88,6 +88,11 @@ button:hover{
     font-size: 1.07rem;
 }
 
+#messageError{
+    display: none;
+    /*border-color: ;*/
+}
+
 
 @media (max-width: 767px) {
 

@@ -1,37 +1,29 @@
-const precio = 200;
-var cantidadEntradas = document.getElementById('cantidad');
+const valorEntrada = 200;
+let nombre = document.getElementById('nombre');
+let apellido = document.getElementById('apellido');
+let correo = document.getElementById('correo');
+let cantidad = document.getElementById('cantidad');
+let categoria = document.getElementById('categoria');
+let pError = document.getElementById('messageError');
+let importeTotal = 0;
+
 var btnResumen = document.getElementById('btnResumen');
-var categoria = document.getElementById('categoria');
+btnResumen.addEventListener('click', function(){
+    validarCampos(nombre);
+    validarCampos(apellido);
+    validarCampos(correo);
+    validarCampos(cantidad);
+});
 
-btnResumen.addEventListener('click',obtenerCategoria); //"Subscription"
-
-function obtenerCategoria(){
-    if(categoria.value == 1){
-        var precioFinal = ((precio * cantidadEntradas.value)*0.20);
-        document.getElementById('importeNeto').innerText = precioFinal;
-        alert(precioFinal);
-        return precioFinal;
+function validarCampos( idAtributo){
+    if(idAtributo.value === ""){
+        idAtributo.classList.add("is-invalid");
+        idAtributo.style.borderColor= "red";
+        pError.style.display = "flex";
+        //idAtributo.focus();
     }
-
-    if(categoria.value == 2){
-        var precioFinal = ((precio * cantidadEntradas.value)*0.50);
-        alert(precioFinal);
-        return precioFinal;
+    else{
+        pError.style.display = "none";
+        idAtributo.style.borderColor= "unset";
     }
-
-    if(categoria.value == 3){
-        var precioFinal = ((precio * cantidadEntradas.value)*0.85);
-        alert(precioFinal);
-        return precioFinal;
-    }
-
-    /*function calcularPrecio(){
-    let resultado = precio * cantidadEntradas.value;
-    alert(resultado);
-    return resultado;
-    }*/
 }
-
-
-
-
