@@ -29,7 +29,6 @@ function calcularValorCompra(){
     if(nombre.value === ""){
         alert("Por favor escriba su nombre!");
         nombre.focus();
-        nombre.classList.add("is-invalid");
         mostrarMessageError(errorCampoVacio);
         return;
     }
@@ -37,7 +36,6 @@ function calcularValorCompra(){
     if(apellido.value === ""){
         alert("Por favor escriba su apellido!");
         apellido.focus();
-        apellido.classList.add("is-invalid");
         mostrarMessageError(errorCampoVacio);
         return;
     }
@@ -45,7 +43,6 @@ function calcularValorCompra(){
     if(correo.value === ""){
         alert("Por favor escriba su correo!");
         correo.focus();
-        correo.classList.add("is-invalid");
         mostrarMessageError(errorCampoVacio);
         return;
     }
@@ -54,7 +51,6 @@ function calcularValorCompra(){
 
     if(!correoRegex.test(correo.value)){
         alert('Email invalido! Reintente');
-        correo.classList.add("is-invalid");
         correo.focus();
         mostrarMessageError(errorEmailInvalido);
         return;
@@ -64,7 +60,6 @@ function calcularValorCompra(){
 
     if(cantidad.value === "" || cantidad.value === '0'){
         alert('Debe ingresar una cantidad valida!');
-        correo.classList.add("is-invalid");
         correo.focus();
         mostrarMessageError(errorCantidad);
         return;
@@ -75,7 +70,6 @@ function calcularValorCompra(){
 
     if(categoria.value === ""){
         alert('Debe seleccionar una categoria!');
-        correo.classList.add("is-invalid");
         correo.focus();
         mostrarMessageError(errorCategoria);
         return;
