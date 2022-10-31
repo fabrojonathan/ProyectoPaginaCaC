@@ -58,9 +58,9 @@ function calcularValorCompra(){
 
     ocultarMessageError(errorEmailInvalido);
 
-    if(cantidad.value === "" || cantidad.value === '0'){
+    if((isNaN(cantidad.value)) || cantidad.value == 0 || !(/^\S/.test(cantidad))){
         alert('Debe ingresar una cantidad valida!');
-        correo.focus();
+        cantidad.focus();
         mostrarMessageError(errorCantidad);
         return;
     }
@@ -70,7 +70,7 @@ function calcularValorCompra(){
 
     if(categoria.value === ""){
         alert('Debe seleccionar una categoria!');
-        correo.focus();
+        categoria.focus();
         mostrarMessageError(errorCategoria);
         return;
     }
@@ -81,7 +81,7 @@ function calcularValorCompra(){
 }
 
 function mostrarMessageError(message){
-    message.style.display = "flex";
+    message.style.display = "block";
 }
 
 function ocultarMessageError(message){
