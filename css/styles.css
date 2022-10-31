@@ -82,6 +82,7 @@ footer{
 a:hover{
     color: rgb(233, 192, 10) !important;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
 button:hover{
@@ -105,7 +106,6 @@ button:hover{
     display: none;
 }
 
-
 @media (max-width: 767px) {
 
     #logoimg{
@@ -125,8 +125,8 @@ button:hover{
 
     /*Comprar Tickets*/
     #cards div{
-        height: 40vh;
-        width: 65vw;
+        height: 250px;
+        width: 75%;
     }
 }
 
@@ -194,8 +194,8 @@ button:hover{
     }
 
     #cards div{
-        height: 35vh;
-        width: 65vw;
+        width: 225px !important;
+        height: 190px !important;
     }
 }
 
@@ -210,7 +210,7 @@ button:hover{
     }
 
     #cards div{
-        width: 22% !important;
-        height: 32vh !important;
+        width: 225px !important;
+        height: 190px !important;
     }
 }

@@ -135,4 +135,9 @@ function limpiarCampos(){
     categoria.value = 0;
     categoria.style.borderColor= "initial";
     errorCampoVacio.style.display = "none";
+
+    ocultarMessageError(errorCategoria);
+    ocultarMessageError(errorCampoVacio);
+    ocultarMessageError(errorCantidad);
+    ocultarMessageError(errorEmailInvalido);
 }
