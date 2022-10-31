@@ -93,6 +93,18 @@ button:hover{
     /*border-color: ;*/
 }
 
+#messageErrorEmail{
+    display: none;
+}
+
+#messageErrorCategoria{
+    display: none;
+}
+
+#messageErrorCantidad{
+    display: none;
+}
+
 
 @media (max-width: 767px) {
 
@@ -169,7 +181,7 @@ button:hover{
         width: 45% !important;
     }
 
-    #correo{
+    #correo ,#messageError, #messageErrorCantidad, #messageErrorEmail, #messageErrorCategoria{
         width: 91.5% !important;
     }
 
