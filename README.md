@@ -10,7 +10,8 @@ Este es un proyecto realizado dentro del programa Codo a Codo 4.0.<br>
 Donde replicaremos una página web apartir de un diseño proporcionado.<br> 
 Debiendo no solo replicar el diseño, si no también el comportamiento de la página.<br>
 Se debera implementar además un diseño responsive para poder ser visualizado desde cualquier dispositivo.<br>
-El diseño responsive no posee un diseño previo, por lo que el alumno debera improvisar y dejar a su imaginación el diseño del mismo.
+El diseño responsive no posee un diseño previo, por lo que el alumno debera improvisar y dejar a su imaginación el diseño del mismo.<br>
+Se implementara JavaScript unicamente en la compra de tickets.
 
 
 
