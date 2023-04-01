@@ -1,7 +1,7 @@
 
-![LanguajeHTML](https://img.shields.io/badge/Languaje-HTML-orange)
-![LanguajeCSS](https://img.shields.io/badge/Languaje-CSS-blue)
-![LanguageJS](https://img.shields.io/badge/Languaje-JavaScript-yellow)
+![LanguajeHTML](https://img.shields.io/badge/Languaje-HTML-orange)<br>
+![LanguajeCSS](https://img.shields.io/badge/Languaje-CSS-blue)<br>
+![LanguageJS](https://img.shields.io/badge/Languaje-JavaScript-yellow)<br>
 ![Status](https://img.shields.io/badge/Status-InProgress-yellow)
 
 # Proyecto Codo a Codo 4.0
